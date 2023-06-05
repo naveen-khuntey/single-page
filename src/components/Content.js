@@ -1,9 +1,14 @@
 import React from 'react'
-
+import Card from './Card'
 export default function Content() {
   return (
-    <div>
-      content
+    <div className='content'>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
   )
 }

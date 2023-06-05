@@ -2,6 +2,7 @@
 .header-body{
   display: flex;
   /* border: 2px solid red; */
+  padding: 1.07em;
   justify-content: space-between;
   background-color: black;
   color: white;
@@ -10,5 +11,74 @@
   display: flex;
 }
 /* searchbox */
+.search-box{
+  background-color: rgba(98, 147, 196, 0.318);
+  /* border: 2px solid red; */
+  padding: 8.20em;
+  display: flex;
+  justify-content: center;
+}
 /* content */
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8em;
+  row-gap: 3em;
+}
+/*card*/
+.card{
+  border: 2px solid red;
+  display: flex;
+  flex: 45%;
+  height: 15em;
+}
+.card-img img{
+  margin-top: 2.5em;
+  width: 10em;
+}
 /* footer */
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+  background-color: black;
+  color: white;
+  padding: 4.75em;
+}
+.footer-child{
+  flex: 19%;
+}
+.footer p{
+  margin: 1px 0;
+  cursor: pointer;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+.last-footer{
+  align-self: flex-end;
+}
+.last-footer img{
+  width: 3em;
+}
+@media screen and (max-width: 920px){
+    .content{
+      flex-direction: column;
+    }
+}
+@media screen and (max-width : 820px) and (min-width:500px){
+  .footer-child{
+    flex : 45%
+  }
+}
+@media screen and (max-width : 500px) {
+  .footer{
+    justify-content: center;
+  }
+  .footer-child{
+    align-items: center;
+    flex: 75%;
+  }
+}
