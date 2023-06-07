@@ -1,18 +1,63 @@
 /* headder  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 .header-body{
   display: flex;
-  /* border: 2px solid red; */
-  padding: 1.07em;
   justify-content: space-between;
   background-color: black;
   color: white;
 }
+.header-body img{
+  border-radius: 15px;
+  overflow: hidden;
+  align-self: center;
+  width: 1.5em;
+  height: 1.5em;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
 .title-header{
   display: flex;
+  margin-left: 5.25vw;
+  font-size: 25px;
+  font-weight: 600;
+}
+.title-header p{
+  font-family: 'Nunito', sans-serif;
+  margin-left: 1vw;
+}
+.header-button{
+  align-self: center;
+  margin-right: 6em;
+}
+.button1 , .button2 {
+  font-family: 'Rubik', sans-serif;
+  height: 7vh;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.button1{
+  width: 15vw;
+  border: 1px solid white;
+  background-color: #191a1b;
+  margin-right: 15px;
+}
+.button2{
+  width: 9vw;
+  border: 1px solid #4c5fd5;
+  background-color: #4c5fd5;
+  margin-right: 10px;
+}
+.button2:hover{
+  border: 1px solid white;
+  color: black;
+  background-color: white;
 }
 /* searchbox */
 .search-box{
-  background-color: rgba(98, 147, 196, 0.318);
+  background-color: rgb(218,219,241);
   /* border: 2px solid red; */
   padding: 8.20em;
   display: flex;
@@ -50,8 +95,11 @@
   flex: 19%;
 }
 .footer p{
-  margin: 1px 0;
+  margin: 4px 0;
   cursor: pointer;
+}
+.footer p :hover{
+  text-decoration: underline;
 }
 .footer a{
   color: white;
@@ -61,7 +109,11 @@
   align-self: flex-end;
 }
 .last-footer img{
+  border-radius: 15px;
+  overflow: hidden;
   width: 3em;
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 @media screen and (max-width: 920px){
     .content{
@@ -72,6 +124,9 @@
   .footer-child{
     flex : 45%
   }
+  .title-header{
+    margin-left: 0%;
+  }
 }
 @media screen and (max-width : 500px) {
   .footer{
@@ -80,5 +135,8 @@
   .footer-child{
     align-items: center;
     flex: 75%;
+  }
+  .title-header{
+    margin-left: 0%;
   }
 }
