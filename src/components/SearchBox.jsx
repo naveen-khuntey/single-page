@@ -5,7 +5,9 @@ export default function SearchBox() {
     <div className='search-box'>
       <div>
         <h1>How Can We help?</h1>
-        <input type='search' placeholder='Search'></input>
+        <form>
+          <input type='search' placeholder='Search' />
+        </form>
       </div>
     </div>
   )
